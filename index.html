@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的作品集</title>
+    <style>
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* NAVBAR */
+      header {
+        background: #222;
+        color: white;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+      }
+      header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: auto;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #f39c12;
+      }
+
+      /* HERO */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("https://picsum.photos/1200/700?grayscale") no-repeat center/cover;
+        color: white;
+        text-align: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+      }
+      .hero p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+      }
+      .hero button {
+        margin-top: 2rem;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        background: #f39c12;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .hero button:hover {
+        background: #e67e22;
+      }
+
+      /* SECTIONS */
+      section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 4rem 2rem;
+      }
+      section h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #222;
+      }
+
+      /* PORTFOLIO GRID */
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+      .portfolio-item {
+        background: #fafafa;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .portfolio-item:hover {
+        transform: translateY(-5px);
+      }
+      .portfolio-item img {
+        width: 100%;
+        display: block;
+      }
+      .portfolio-item h3 {
+        padding: 1rem;
+      }
+
+      /* ABOUT */
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+      }
+      .about img {
+        max-width: 300px;
+        border-radius: 10px;
+      }
+      .about-text {
+        flex: 1;
+      }
+
+      /* CONTACT */
+      .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 600px;
+        margin: auto;
+      }
+      .contact input,
+      .contact textarea {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      .contact button {
+        padding: 0.8rem;
+        background: #222;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .contact button:hover {
+        background: #333;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav>
+        <h2>My Portfolio</h2>
+        <ul>
+          <li><a href="#portfolio">作品集</a></li>
+          <li><a href="#about">關於我</a></li>
+          <li><a href="#contact">聯絡</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>你好，我是前端工程師</h1>
+      <p>熱愛設計與程式，把好作品帶給大家</p>
+      <button>查看作品</button>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>作品集展示</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://picsum.photos/400/300" alt="作品1" />
+          <h3>作品名稱1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://picsum.photos/401/300" alt="作品2" />
+          <h3>作品名稱2</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://picsum.photos/402/300" alt="作品3" />
+          <h3>作品名稱3</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>關於我</h2>
+      <div class="about">
+        <img src="https://picsum.photos/300" alt="大頭照" />
+        <div class="about-text">
+          <p>我是一位前端工程師，擅長 HTML、CSS、JavaScript 與 RWD 設計。</p>
+          <p>熱愛設計與使用者體驗，希望能透過程式讓生活更美好。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>聯絡我</h2>
+      <form>
+        <input type="text" placeholder="姓名" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="訊息內容"></textarea>
+        <button type="submit">送出</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 我的作品集. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
