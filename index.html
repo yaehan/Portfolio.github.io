@@ -49,7 +49,7 @@
       /* HERO */
       .hero {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          url("https://picsum.photos/1200/700?grayscale") no-repeat center/cover;
+          url("./image/6.jpg") no-repeat center/cover;
         color: white;
         text-align: center;
         height: 90vh;
@@ -112,6 +112,14 @@
       .portfolio-item img {
         width: 100%;
         display: block;
+        object-fit: cover;
+        height: 450px;
+        cursor: pointer;
+      }
+      .portfolio-item img:focus,
+      .portfolio-item img:hover {
+        transform: scale(1.2);
+        object-fit: contain;
       }
       .portfolio-item h3 {
         padding: 1rem;
@@ -174,7 +182,7 @@
     <!-- NAVBAR -->
     <header>
       <nav>
-        <h2>My Portfolio</h2>
+        <h2>YAHAN YANG</h2>
         <ul>
           <li><a href="#portfolio">作品集</a></li>
           <li><a href="#about">關於我</a></li>
@@ -185,9 +193,9 @@
 
     <!-- HERO -->
     <section class="hero">
-      <h1>你好，我是前端工程師</h1>
-      <p>熱愛設計與程式，把好作品帶給大家</p>
-      <button>查看作品</button>
+      <h1>軟體工程新鮮人</h1>
+      <p>擁有七年日本職場經驗，精通 Excel 與流程優化</p>
+      <p>現在積極轉職成工程師，希望用專業知識帶來價值</p>
     </section>
 
     <!-- PORTFOLIO -->
@@ -195,16 +203,28 @@
       <h2>作品集展示</h2>
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <img src="https://picsum.photos/400/300" alt="作品1" />
-          <h3>作品名稱1</h3>
+          <img src="./image/1.jpg" alt="作品1" />
+          <h3>平面設計-海報</h3>
         </div>
         <div class="portfolio-item">
-          <img src="https://picsum.photos/401/300" alt="作品2" />
-          <h3>作品名稱2</h3>
+          <img src="./image/2.jpg" alt="作品2" />
+          <h3>平面設計-海報</h3>
         </div>
         <div class="portfolio-item">
-          <img src="https://picsum.photos/402/300" alt="作品3" />
-          <h3>作品名稱3</h3>
+          <img src="./image/3.jpg" alt="作品3" />
+          <h3>平面設計-海報</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="./image/4.jpg" alt="作品4" />
+          <h3>平面設計-海報</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="./image/onion.png" alt="作品5" />
+          <h3>平面設計-LINE貼圖</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="./image/5.jpg" alt="作品6" />
+          <h3>3D建模</h3>
         </div>
       </div>
     </section>
@@ -213,10 +233,14 @@
     <section id="about">
       <h2>關於我</h2>
       <div class="about">
-        <img src="https://picsum.photos/300" alt="大頭照" />
+        <img src="./image/7.jpg" alt="大頭照" />
         <div class="about-text">
-          <p>我是一位前端工程師，擅長 HTML、CSS、JavaScript 與 RWD 設計。</p>
-          <p>熱愛設計與使用者體驗，希望能透過程式讓生活更美好。</p>
+          <p>
+            具三年以上庫存與品質管理經驗，七年日本工作背景，精通中日雙語，能促進跨文化合作。
+          </p>
+          <p>
+            近期希望轉換跑道，對網頁與程式設計充滿熱情，期待結合專業與新技能為企業創造價值。
+          </p>
         </div>
       </div>
     </section>
@@ -234,7 +258,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>&copy; 2025 我的作品集. All Rights Reserved.</p>
+      <p>&copy; 2025 YAHAN YANG. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
